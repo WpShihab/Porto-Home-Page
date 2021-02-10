@@ -1,0 +1,486 @@
+.banner{
+    height:100vh;
+    width:100%;
+    background-image:url('../img/banner/bg-portfolio-5.jpg');
+    background-position:center center;
+    background-size:cover;
+
+    .main-menu{
+        @include clearfix;
+        width:1100px;
+        padding-top:50px;
+
+        .logo{
+            width:50%;
+            float:left;
+
+            img{
+                width:100px;
+                height:40px;
+            }
+        }
+        .menu{
+
+            width:50%;
+            float:left;
+
+            nav{
+                ul{
+                    li{
+                        display:inline-block;
+
+                        a{
+                            display:block;
+                            text-transform:uppercase;
+                            font-size:13px;
+                            padding-left:20px;
+                            text-decoration:none;
+                            color:#fff;
+
+                            &:hover{
+                                color:#0074E8;
+                            }
+                        }
+                        #active{
+                            color:#0074E8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner-content{
+        text-align:center;
+        padding-top:210px;
+        ul{
+            li{
+                display:inline-block;
+                color:#fff;
+                padding:0px 15px;
+                
+
+
+                p{
+                    font-weight:400px;
+                    font-size:20px;
+                }
+            }
+        }
+        h1{
+            color:#fff;
+            font-weight:900;
+            font-size:49px;
+            text-transform:uppercase;
+            margin-top:-20px;
+        }
+        p{
+            font-size:16px;
+            color: rgb(255, 255, 255);
+            line-height: 26px;
+        }
+    }
+}
+
+//Service Section Start here
+.service{
+    background:#0088CC;
+    height:650px;
+
+    .head-content{
+        text-align:center;
+        color:#fff;
+        margin:auto;
+        padding-top:105px;
+        
+
+
+        h1{
+            font-size: 40px;
+            font-weight:600; 
+        }
+        P{
+            font-size:14px;
+            color:rgb(221, 218, 218);
+            line-height:26px;
+        }
+    }
+
+    .service-content{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom:50px;
+        
+
+        .single-item{
+            padding-top:50px;
+            @include clearfix;
+            
+
+            .icon{
+                width:15%;
+                float:left;
+
+                
+                svg{
+                    width:30px;
+                    height:30px;
+                    color:#fff;
+                }
+            }
+
+            .content{
+                width:85%;
+                float:left;
+               
+
+                h4{
+                    color:#fff;
+                    font-size:18px;
+                    font-weight:500;
+                    padding-left:10px;
+                    text-transform:uppercase;
+                }
+                p{
+                    color:#fff;
+                    font-size:16px;
+                    line-height: 26px;
+                    padding-left:10px;
+                    opacity:0.7;
+                    
+                }
+            }
+            
+        }
+    }
+
+}
+
+//Project Section Start here
+.project{
+    background:#fff;
+    height:650px;
+
+
+    .project-head{
+        padding-top:100px;
+        text-align:center;
+        margin:auto;
+
+        h3{
+            font-size:30px;
+            font-weight:700;
+        }
+        p{
+            color:rgb(119, 119, 119);
+            font-size:14px;
+        }
+    }
+}
+
+
+
+
+//Feature Section Start here
+
+.feature{
+    margin:40px auto;
+    padding-bottom:50px;
+}
+.feature-items{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:center;
+
+    .single-feature{
+        width:250px;
+        height:250px;
+        background-size:100% auto;
+        background-position:center center;
+        cursor:pointer;
+        background-repeat:no-repeat;
+        transition:.3s;
+        position:relative;
+        overflow:hidden;
+        margin:12px;
+
+
+        &:hover{
+            background-size:130% auto;
+
+            .product-content{
+                    bottom:1px;
+            }
+    
+            
+        }
+
+
+        .product-content{
+            background-color:#fff;
+            height:70px;
+            width:100%;
+            box-sizing:border-box;
+            padding:20px;
+            position:absolute;
+            bottom: -70px;
+            left:0px;
+            right:0px;
+            transition:.3s;
+        }
+        h4{
+            font-size:16px;
+            font-weight:700;
+        }
+
+    }
+}
+
+
+//Slider section start here
+.slider{
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7),), url('../img/slider/partner.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:600px;
+    width:100%;
+    text-align:center;
+    
+
+
+    .content-top{
+        text-align:center;
+        margin:auto;
+        h2{
+            color:rgb(255, 255, 255);
+            font-size:28px;
+            font-weight:700;
+            padding-top:80px;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            font-size:16px;
+            opacity:.7;
+            line-height:26px;
+            padding:10px 0px;
+        }
+    }
+    .gallery{
+        width:1100px;
+        margin:30px 0px;
+        
+
+        
+        
+    }
+    .auth-content{
+        #p1{
+            color:rgb(255,255,255);
+            font-size:21px;
+            line-height:26px;
+            text-align:center;
+            margin-top:30px;
+        }
+        #p2{
+            color:#fff;
+            font-size:14px;
+            padding-top:10px;
+            font-weight:600;
+        }
+    }
+}
+
+//Team Section start here
+
+.team{
+    background:#fff;
+    height:700px;
+
+    .team-head{
+        text-align:center;
+        margin:auto;
+        padding-top:100px;
+        h2{
+            font-size:30px;
+            font-weight:700;
+
+        }
+        p{
+            color: #777;
+            line-height: 26px;
+            font-size:14px;
+        }
+    }
+    .team-gallery{
+        padding-top:20px;
+
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:center;
+        .single-team{
+            padding:10px;
+            a{
+                display:block;
+
+                img{
+                width:250px;
+                height:250px;
+                border-radius:7px;
+
+                }
+            }
+            h4{
+                font-size:20px;
+                font-weight:800;
+                padding-top:10px;
+            }
+            h6{
+                color:rgb(119, 119, 119)
+            }
+            p{
+                color:rgb(119, 119, 119);
+                font-size:12.6px;
+            }
+            
+            .social-links{
+                ul{
+                    li{
+                        display:inline-block;
+
+
+                        a{
+                            display:block;
+                            color:#fff;
+                           
+                            background:#0088CC;
+                            border-radius:50%;
+                            border-radius:1px solid #fff;
+                            padding:5px;
+                            font-size:12px;
+
+                            svg{
+                                
+                                width:15px;
+                                height:15px;
+                            
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//contact section start here
+.contact-us{
+    height:550px;
+    width:100%;
+    background:#EDEDED;
+    @include clearfix;
+
+    .map-content{
+        width:50%;
+        float:left;
+    }
+  
+    .contact-content{
+        width:50%;
+        float:left;
+
+        box-sizing:border-box;
+        margin-top:50px;
+        padding-bottom:70px;
+
+
+        
+        
+        .contact-form{
+           h3{
+                font-size: 20px;
+
+            }
+            p{
+                color:rgb(119, 119, 119);
+                font-size: 14px;
+                padding-top:.9em ;
+            }
+            form{
+                margin-top:10px;
+
+                ul{
+                    li{
+                        display:inline-block;
+                        margin:10px 0px;
+                        border-radius:5px;
+                        
+                         
+                        input{
+                            padding:13px 13px;
+                            font-size:14px;
+                            color:#777;
+                        }
+                        
+                    }
+                }
+                
+                input{
+                    width:93%;
+                    padding:10px 5px;
+                    margin:5px 0px;
+                    border-radius:5px;
+                    border:1px solid rgba(0, 0, 0, 0.09);
+                    color:#777;
+                    font-size:14px;
+                }
+                textarea{
+                    color:#777;
+                    font-size:14px;
+                    padding:10px 5px;
+                }
+                
+                button{
+                    padding: .8rem 1.5rem;
+                    background-color:rgb(0, 136, 204);
+                    color:#fff;
+                    cursor:pointer;
+                    margin-top:10px;
+                    border-radius:10px;
+
+                    &:hover{
+                        background:#00A1F2;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Footer Bottom start here
+
+.footer-bottom{
+    background:#212529;
+    width:100%;
+    height:100px;
+
+    .ft-content{
+        padding-top:40px;
+        text-align:center;
+        margin:auto;
+        
+        p{
+            color:rgb(85, 85, 85);
+            font-size:11px;
+        }
+    }
+}
